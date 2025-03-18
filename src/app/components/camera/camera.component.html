@@ -1,0 +1,85 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Camera & Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="takePicture()">Capture Image</ion-button>
+  <ion-button (click)="selectFromGallery()">Select from Gallery</ion-button>
+  <ion-button (click)="shareImage()" [disabled]="!savedFileUri">Share Image</ion-button>
+
+  <div *ngIf="capturedImage">
+    <h3>Selected/Captured Image:</h3>
+    <img [src]="sanitizeImage(capturedImage)" *ngIf="capturedImage" style="width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;" />
+  </div>
+
+  <div 
+  style="margin: 20px auto; width: 200px; height: 200px; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; position: relative; background-color: #f9f9f9;">
+  
+  <img *ngIf="capturedImage" [src]="capturedImage" alt="Captured Image" style="max-width: 100%; max-height: 100%;" />
+  <div *ngIf="!capturedImage" style="text-align: center; color: #888;">
+    <ion-icon name="camera-outline" size="large"></ion-icon>
+    <p>No Image Available</p>
+  </div>
+</div>
+</ion-content> -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Image</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 bg-danger text-white text-center">
+        <h4 class="py-2 pt-3">Image Assign Module</h4>
+      </div>
+     
+      <div class="col-12 text-center my-3">
+        <h6>Gents Bracelet</h6>
+      </div>
+     
+      <div class="col-12 text-center my-3">
+        <div class="image-container" style="outline:1px solid black; outline-offset: 5px; display: inline-block; padding: 10px; min-height: 200px; min-width: 200px;">
+          <!-- Image with error handling -->
+          <img src="{{BrowImage}}"
+               style="max-width: 100%; height: auto; max-height: 300px;"
+               alt="Selected image">
+          <!-- <img [src]="BrowImage"
+               style="max-width: 100%; height: auto; max-height: 300px;"
+               alt="Selected image"> -->
+         
+          <!-- Placeholder when no image -->
+          <svg *ngIf="!BrowImage" xmlns="http://www.w3.org/2000/svg" height="10rem" viewBox="0 -960 960 960" width="10rem" fill="#000000">
+            <path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm56-97h489L578-473 446-302l-93-127-117 152Zm-56 97v-600 600Zm160.12-390q20.88 0 35.38-14.62 14.5-14.62 14.5-35.5 0-20.88-14.62-35.38-14.62-14.5-35.5-14.5-20.88 0-35.38 14.62-14.5 14.62-14.5 35.5 0 20.88 14.62 35.38 14.62 14.5 35.5 14.5Z" />
+          </svg>
+        </div>
+        <h6 class="mx-4 mt-2">Select or Capture Image</h6>
+       
+        <!-- Debug info -->
+        <!-- <div *ngIf="selectedImage" class="text-danger mt-2">
+          <small>Image data may be invalid. Check console for details.</small>
+        </div> -->
+      </div>
+     
+      <div class="col-12 text-center mb-3">
+        <ion-button class="mx-2" (click)="selectFromGallery()">
+          <ion-icon name="images-outline" slot="start"></ion-icon>
+          Select Image
+        </ion-button>
+       
+        <ion-button class="mx-2" (click)="captureImage()">
+          <ion-icon name="camera-outline" slot="start"></ion-icon>
+          Capture Image
+        </ion-button>
+      </div>
+     
+      <div class="col-12 text-center">
+        <button class="btn btn-sm w-50 btn-outline-danger" [disabled]="!BrowImage">Save</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

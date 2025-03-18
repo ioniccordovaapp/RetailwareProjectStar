@@ -1,0 +1,29 @@
+.dark-theme {
+    --ion-background-color:  transparent linear-gradient(180deg, #42275a  0%, #734b6d 100%);
+    --ion-text-color: #e0e0e0;
+    --ion-toolbar-background: #924879;
+    --ion-card-background: #1f1f1f;
+  
+    --primary-color: #26a69a;
+    --secondary-color: #004d40;
+    --highlight-color: #ff9800;
+  
+    --button-gradient: linear-gradient(90deg, #004d40, #26a69a);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  
+    --first-innerdiv-bg: transparent linear-gradient(180deg, #42275a  0%, #734b6d 100%);
+    --second-innerdiv-bg: #ad5492;
+  
+    --first-span-text-color: #4f14ad;
+    --second-span-text-color: #e0e0e0;
+    --line-color: #444444;
+  
+    --top-number-color: #e0e0e0;
+    --top-text-color: #a60909;
+  
+    --ptag-number-color: #80d8ff;
+    --ptag-text-color: #80d8ff;
+  
+    --ptag-div-border-color: hsl(200, 20%, 40%);
+    --text-margin-color: #80d8ff;
+  }

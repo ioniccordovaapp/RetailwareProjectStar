@@ -1,0 +1,120 @@
+.first_innerdiv{
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--first-innerdiv-bg);
+    // background: transparent linear-gradient(180deg, #00508E 0%, #00B9FF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 26px 26px 0px 0px;
+    opacity: 1;
+    // display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.second_innerdiv{   
+    padding: 10px;
+    width: 100%; /* Optional: Adjust width as needed */
+    height: 27%; /* Optional: Adjust height as needed */
+    background: var(--second-innerdiv-bg);
+    // background: #ffffff; /* Optional: Add background color */
+    border-radius: 29px 29px 0px 0px;
+    opacity: 1;
+    // transform: translateY(-40%); /* Move it slightly upwards */
+}
+
+.third_innerdiv{
+    width: 100%;
+    height: 50%; 
+    // border: 2px solid green; 
+    display: flex;
+}
+
+.forth_innerdiv{
+    height: 100%; 
+    width: 50%; 
+    display: flex; flex-direction: column; 
+    align-items: center; 
+    justify-content: center; text-align: center;
+}
+
+.first_span_text{
+    font-size: 24px; 
+    font-weight: bold;
+    color: #0067A6;
+}
+
+.second_span_text{
+    font-size: 16px; 
+    color: #000000;
+}
+
+.span_bottom_line{
+    border-bottom: 2px solid #707070;
+}
+
+.span_right_line{
+    border-right: 2px solid #707070;
+}
+
+.topNumberstyle{
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal bold 30px/14px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-top: 29px;
+    opacity: 1;
+}
+
+.topTextstyle{
+    padding: 15px 0px 5px 0px;
+    margin: 0px;
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal medium 16px/14px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.ptag_Number{
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal bold 30px/14px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; margin: 15px;
+}
+
+.ptagText{
+    /* UI Properties */
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal medium 16px/16px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+}
+
+.ptagdiv{
+    border-bottom: 5px solid hsl(200, 77%, 37%); 
+    flex: 1;
+    height: 100%; 
+    margin: 0 8px 0 8px;
+}
+
+.textMargin{
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal medium 18px/14px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: auto;
+}
+
+.second-div-width{
+    width: 50%;
+}
+

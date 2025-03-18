@@ -1,0 +1,85 @@
+
+.divSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto
+}
+
+.rounded-input-item {
+     
+  margin-top: 0px !important;
+  --background: #f9f9f9;
+  /* Light background color for the field */
+  --border-radius: 10px;
+  /* Rounded corners */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  padding: 5px 10px;
+  /* Inner padding for spacing */
+  margin: 10px 0;
+  /* Add spacing between input fields */
+}
+
+
+.input-highlight.sc-ion-input-md {
+  display: none !important;
+  height: 0 !important;
+}
+
+
+ion-input {
+    // --highlight-color: transparent !important;  /* Removes default highlight */
+    --border-width: 0px !important; /* Removes border */
+    --box-shadow: none !important; /* Removes any focus shadow */
+}
+
+/* Specific to MD mode (Material Design) */
+.input-highlight.sc-ion-input-md {
+    display: none !important;
+    height: 0 !important;
+}
+
+/* Specific to iOS mode */
+.input-bottom.sc-ion-input-ios {
+    display: none !important;
+}
+
+ion-input {
+  --highlight-color: red ransparent !important; /* Removes bottom focus line */
+}
+
+
+
+
+// enter otp mobile number page css
+
+
+
+// enter get otp number number page css
+
+
+
+
+
+
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.otp-box {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 10px;
+  // border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+  padding: 5px;
+}

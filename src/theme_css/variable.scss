@@ -1,0 +1,143 @@
+/* variables.css */
+
+/* Default Light Theme Variables */
+:root {
+
+    --ion-background-color: #f9f9f9;
+    --ion-text-color: #222222;
+    --ion-toolbar-background: #ffffff;
+    --ion-card-background: #ffffff;
+  
+    --primary-color: #3a6073;
+    --secondary-color: #16222a;
+    --highlight-color: #f1c40f;
+  
+    --button-gradient: linear-gradient(90deg, #3a6073, #16222a);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    --first-innerdiv-bg: transparent linear-gradient(180deg, #00508E 0%, #00B9FF 100%);
+    --second-innerdiv-bg: #ffffff;
+  
+    --first-span-text-color: #0067A6;
+    --second-span-text-color: #000000;
+    --line-color: #707070;
+  
+    --top-number-color: #ffffff;
+    --top-text-color: #ffffff;
+  
+    --ptag-number-color: #ffffff;
+    --ptag-text-color: #ffffff;
+  
+    --ptag-div-border-color: hsl(200, 77%, 37%);
+    --text-margin-color: #ffffff;
+
+   // --------------
+   --custom-modal-background: #ffffff;
+
+  }
+  
+  /* Dark Theme Variables */
+  .dark-theme {
+    --ion-background-color:  transparent linear-gradient(180deg, #42275a  0%, #734b6d 100%);
+    --ion-text-color: black;
+    --ion-toolbar-background: #a53a81;
+    --ion-card-background: #1f1f1f;
+  
+    --primary-color: #26a69a;
+    --secondary-color: #004d40;
+    --highlight-color: #ff9800;
+  
+    --button-gradient: linear-gradient(90deg, #004d40, #26a69a);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  
+    --first-innerdiv-bg: transparent linear-gradient(180deg, #42275a  0%, #734b6d 100%);
+    --second-innerdiv-bg: #ad5492;
+  
+    --first-span-text-color: #4f14ad;
+    --second-span-text-color: #e0e0e0;
+    --line-color: #444444;
+  
+    --top-number-color: #e0e0e0;
+    --top-text-color: #a60909;
+  
+    --ptag-number-color: #80d8ff;
+    --ptag-text-color: #80d8ff;
+  
+    --ptag-div-border-color: hsl(200, 20%, 40%);
+    --text-margin-color: #80d8ff;
+
+
+    --custom-modal-background: #924879;
+    
+  }
+  
+  /* High Contrast Theme Variables */
+// .high-contrast-theme {
+//     --ion-background-color: hsl(84, 43%, 43%);
+//     --ion-text-color: #180e0e;
+//     --ion-toolbar-background: hsl(84, 43%, 43%);
+//     --ion-card-background:hsl(84, 43%, 43%);
+  
+//     --primary-color: #ff0000;
+//     --secondary-color: #00ff00;
+//     --highlight-color: #ffff00;
+  
+//     --button-gradient: linear-gradient(90deg, #ff0000, #00ff00);
+//     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  
+//     --first-innerdiv-bg: transparent linear-gradient(180deg, #dd5252 0%, #e4e465 100%);
+//     --second-innerdiv-bg: #98c73fd2;
+  
+//     --first-span-text-color: #ff0000;
+//     --second-span-text-color: #ffffff;
+//     --line-color: #ffffff;
+  
+//     --top-number-color: #ff0000;
+//     --top-text-color: #ffffff;
+  
+//     --ptag-number-color: #ff0000;
+//     --ptag-text-color: #ffffff;
+  
+//     --ptag-div-border-color: hsl(0, 100%, 50%);
+//     --text-margin-color: #ffffff;
+
+//     --custom-modal-background: transparent linear-gradient(180deg, #dd5252 0%, #e4e465 100%);
+
+// }
+
+
+
+.high-contrast-theme {
+  // --ion-background-color: linear-gradient(180deg, #dd5252 0%, #e4e465 100%);
+  --ion-text-color: #180e0e;
+  --ion-toolbar-background: hsl(84, 43%, 43%);
+  --ion-card-background: hsl(84, 43%, 43%);
+  
+  /* 🎨 Primary & Secondary Theme Colors */
+  --primary-color: #ff0000;
+  --secondary-color: #00ff00;
+  --highlight-color: #ffff00;
+  
+  /* 🔥 Gradient Styles */
+  --button-gradient: linear-gradient(90deg, #ff0000, #00ff00);
+  --custom-modal-background: linear-gradient(180deg, #dd5252 0%, #e4e465 100%);
+  
+  /* ✨ Shadows */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  
+  /* 📌 Inner Div Backgrounds */
+  --first-innerdiv-bg: linear-gradient(180deg, #dd5252 0%, #e4e465 100%);
+  --second-innerdiv-bg: #98c73fd2;
+  
+  /* 🎭 Text & Border Colors */
+  --first-span-text-color: #ff0000;
+  --second-span-text-color: #ffffff;
+  --line-color: #ffffff;
+  --top-number-color: #ff0000;
+  --top-text-color: #ffffff;
+  --ptag-number-color: #ff0000;
+  --ptag-text-color: #ffffff;
+  --ptag-div-border-color: hsl(0, 100%, 50%);
+  --text-margin-color: #ffffff;
+
+}

@@ -1,0 +1,127 @@
+// .rounded-input-item {
+     
+//     margin-top: 0px !important;
+//     --background: #f9f9f9;
+//     /* Light background color for the field */
+//     --border-radius: 10px;
+//     /* Rounded corners */
+//     --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+//     /* Soft shadow */
+//     padding: 5px 10px;
+//     /* Inner padding for spacing */
+//     margin: 10px 0;
+//     /* Add spacing between input fields */
+//   }
+  
+//   .rounded-input-item ion-input {
+//     --padding-start: 15px;
+//     /* Padding inside the input */
+//     --padding-end: 15px;
+//     --placeholder-color: #aaa;
+//     /* Lighter placeholder color */
+//     border: 2px solid gray;
+
+//   }
+  
+
+  .input_feild_hw{
+    min-height: 40px;
+    // width: 280px;
+    box-shadow: inset 2px 2px 2px #00000029, 2px 2px 2px #00000029;
+    // border: 1px solid #707070;
+    border-radius: 8px !important;
+    opacity: 0.5;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+  }
+  
+  .input-group {
+    display: flex;
+    // flex-direction: column; /* Keeps label & input stacked */
+    // text-align: center;
+  }
+  
+  .btnclass{
+    background: var(--first-innerdiv-bg);
+  }
+
+  .inputfeildbg {
+    border-radius: 8px;
+    padding: 10px;
+    background: transparent linear-gradient(180deg, #00508E 0%, #00B9FF 100%);
+  }
+
+  .first_card {
+    text-align: center;
+    background: var(--first-innerdiv-bg);
+    border-radius: 6px;
+    opacity: 1;
+    height: 87px;
+    color: #FFFFFF;
+  }
+
+  .ion_header {
+    --ion-toolbar-background: var(--first-innerdiv-bg);
+    --ion-toolbar-color: #ffffff;
+    text-align: center;
+  }
+
+
+  .mainDivcss{
+    width:100%; 
+    height: 100%; 
+    // border: 2px solid red; 
+    padding: 10px;
+  }
+
+  .secondmainDiv {
+    width:100%; 
+    height: 100%; 
+    // border: 2px solid rgb(39, 175, 39);
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    overflow-y: auto; /* Enable scrolling */
+    scrollbar-width: none;
+    border-radius: 24px;
+  }
+
+
+
+
+//   .form-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+/* Center text and cursor inside input */
+  .form-control {
+      text-align: center;
+  }
+
+
+
+  
+
+  /* Ensures default select styling */
+select.dropdown-select {
+  appearance: auto; /* Ensures native dropdown arrow */
+  -webkit-appearance: auto; /* Safari support */
+  -moz-appearance: auto; /* Firefox support */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Remove extra styles if Ionic overrides them */
+// ion-select::part(icon) {
+//   display: block !important;
+// }

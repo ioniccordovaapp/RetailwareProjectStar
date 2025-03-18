@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Transaction Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">sell</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div class="table-container">
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>Voucher No.</th>
+          <th style="width: 30%;">Date</th>
+          <th>Total Items</th>
+          <th>Net. Amt.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tbody>
+          <tr *ngFor="let item of getsellData">
+            <td>{{ item.VoucherNo }}</td>
+            <td>{{ item.Date }}</td>
+            <td>{{ item.TotalItems }}</td>
+            <td>{{ item.NetAmount }}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</ion-content>

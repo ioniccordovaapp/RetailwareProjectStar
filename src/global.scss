@@ -1,0 +1,69 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+
+// @import "@ionic/angular/css/palettes/dark.system.css"; // for this css is coming problem for app defalt black theme
+
+
+@import './theme_css/variable.scss';
+
+
+// body {
+//   --ion-background-color: #0db82a;
+//   background-color: #ffffff !important;
+// }
+// html, body {
+//     background-color: #ffffff !important;
+//   }
+
+
+//   ion-menu {
+//     --background: #ac0c0c !important; /* Menu background color */
+//   }
+  
+// //   ion-menu ion-content {
+// //     --background: #ac0c0c !important; /* Content inside menu */
+// //   }
+
+
+.custom-loader {
+    --background: var(--first-innerdiv-bg); /* Dark semi-transparent background */
+  /* Dark background */
+    --spinner-color: #12e43f;
+    --color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }

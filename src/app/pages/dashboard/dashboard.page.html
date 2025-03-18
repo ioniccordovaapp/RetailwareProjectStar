@@ -1,0 +1,129 @@
+<ion-header style="box-shadow: none;" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content> -->
+  <div style="height: 100%; width: 100%;">
+    <div class="first_innerdiv">
+      <div style="height: 35%;">
+        <div>
+          <!-- <div style="text-align: center; padding-top: 50px;">
+            <input id="dateInput" [(ngModel)]="selectdate" 
+            type="date"
+            (ngModelChange)="onDateChange($event)"
+            style="padding: 10px; border-radius: 18px; height: 40px; width: 180px;" />
+          </div> -->
+          <ion-item>
+            <ion-label>Select Date</ion-label>
+            <ion-input type="date" [(ngModel)]="selectedDate" (change)="formatDate($event)"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Formatted Date</ion-label>
+            <ion-input [value]="formattedDate" readonly></ion-input>
+          </ion-item>
+          <div (click)="onDivClick()" style="text-align: center; width: 50%; margin: 0 auto; border-bottom: 2px solid #00C2FF;">
+            <div>
+              <p class="topNumberstyle">{{dashboardStoreData.NetSale}}</p>
+            </div>
+            <span>
+              <p class="topTextstyle">Net Sale</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="second_innerdiv">
+        <div class="third_innerdiv span_bottom_line">
+          <div class="forth_innerdiv span_right_line">
+            <span class="first_span_text">{{dashboardStoreData.NoOfBills}}</span>
+            <span class="second_span_text"><b>Number of bills</b></span>
+          </div>
+          <div class="forth_innerdiv">
+            <span class="first_span_text">{{dashboardStoreData.AvgBill}}</span>
+            <span class="second_span_text"><b>Avg Bill Value</b></span>
+          </div>
+        </div>
+        <div class="third_innerdiv">
+          <div class="forth_innerdiv span_right_line">
+            <span class="first_span_text">{{dashboardStoreData.AvgItem}}</span>
+            <span class="second_span_text"><b>Avg Bill Items</b></span>
+          </div>
+          <div class="forth_innerdiv">
+            <span class="first_span_text">{{dashboardStoreData.TotalQty}}</span>
+            <span class="second_span_text"><b>Avg Bill Qty</b></span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- dynamic code -->
+      <!-- <div class="second_innerdiv">
+        <div class="row">
+          <div  class="third_innerdiv span_bottom_line">
+            <div  [ngClass]="{'col-12': !dashboardStoreData.AvgBill, 'col-6': dashboardStoreData.AvgBill}" *ngIf="dashboardStoreData.NoOfBills"  class="forth_innerdiv span_right_line">
+              <span class="first_span_text">{{dashboardStoreData.NoOfBills}}</span>
+              <span class="second_span_text"><b>Number of bills</b></span>
+            </div>
+            <div [ngClass]="{'col-12': !dashboardStoreData.NoOfBills, 'col-6': dashboardStoreData.NoOfBills}" *ngIf="dashboardStoreData.AvgBill" class="forth_innerdiv">
+              <span class="first_span_text">{{dashboardStoreData.AvgBill}}</span>
+              <span class="second_span_text"><b>Avg Bill Value</b></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="third_innerdiv">
+          <div [ngClass]="{'col-12': !dashboardStoreData.TotalQty, 'col-6': dashboardStoreData.TotalQty}" *ngIf="dashboardStoreData.AvgItem" class="forth_innerdiv span_right_line">
+            <span class="first_span_text">{{dashboardStoreData.AvgItem}}</span>
+            <span class="second_span_text"><b>Avg Bill Items</b></span>
+          </div>
+          <div  [ngClass]="{'col-12': !dashboardStoreData.AvgItem, 'col-6': dashboardStoreData.AvgItem}" *ngIf="dashboardStoreData.TotalQty" class="forth_innerdiv">
+            <span class="first_span_text">{{dashboardStoreData.TotalQty}}</span>
+            <span class="second_span_text"><b>Avg Bill Qty</b></span>
+          </div>
+        </div>
+      </div> -->
+
+      
+
+      <div style="height: 43%;">
+        <span>
+          <p class="textMargin"><b>Loyalty Cards</b></p>
+        </span>
+        <div style="display: flex; justify-content: space-between; width: 100%; height: 35%;">
+          <div class="ptagdiv">
+            <span>
+              <p class="ptag_Number">01</p>
+            </span>
+            <span>
+              <p class="ptagText">Total Issued</p>
+            </span>
+          </div>
+          <div class="ptagdiv">
+            <span>
+              <p class="ptag_Number">02</p>
+            </span>
+            <span>
+              <p class="ptagText">Issued Today</p>
+            </span>
+          </div>
+          <div class="ptagdiv">
+            <span>
+              <p class="ptag_Number">00</p>
+            </span>
+            <span>
+              <p class="ptagText">Transacted Today</p>
+            </span>
+          </div>
+          <!-- <div style="border: 2px solid green; flex: 1;height: 100%;"></div>
+          <div style="border: 2px solid green; flex: 1;height: 100%; margin: 0 10px 10px 10px;"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </ion-content> -->

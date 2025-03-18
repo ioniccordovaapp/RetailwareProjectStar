@@ -1,0 +1,171 @@
+.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .content-bg {
+    position: relative;
+    background: url('/assets/icon/bgImage.svg');
+    /* Background image path */
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-repeat: no-repeat;
+    /* Prevents image repetition */
+    background-position: center;
+    /* Centers the image */
+    height: 95%;
+    /* Ensures it spans the full height */
+    width: 100%;
+  }
+  
+  .form-container {
+    position: relative;
+    z-index: 1;
+    /* Brings form above the background */
+    padding: 12px;
+  }
+  
+  .versionText {
+    width: 216px;
+    height: 16px;
+    text-align: center;
+    font: normal normal normal 12px / 14px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  
+  .retailwareLogo {
+    top: 722px;
+    left: 71px;
+    width: 233px;
+    height: 49px;
+  }
+  
+  .personLogo {
+    top: 517px;
+    left: 48px;
+    width: 280px;
+    height: 144px;
+    /* UI Properties */
+  }
+  
+  
+  
+  .ckeckBox {
+    border-radius: 3px;
+    border-color: white;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .belIcon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(to right, #3A6073, #16222A);
+  }
+  
+  
+  
+  
+  .rounded-input-item {
+     
+    margin-top: 0px !important;
+    --background: #f9f9f9;
+    /* Light background color for the field */
+    --border-radius: 10px;
+    /* Rounded corners */
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    padding: 5px 10px;
+    /* Inner padding for spacing */
+    margin: 10px 0;
+    /* Add spacing between input fields */
+  }
+  
+  .rounded-input-item ion-input {
+    --padding-start: 15px;
+    /* Padding inside the input */
+    --padding-end: 15px;
+    --placeholder-color: #aaa;
+    /* Lighter placeholder color */
+  }
+  
+  
+  .input-label-placement-floating.sc-ion-input-md-h {
+    // Login inpot Box
+    min-height: 47px;
+  }
+  
+  .form-container ion-button {
+    margin-top: 20px;
+    /* Space the button from the rest of the form */
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+    /* Space between input fields */
+  }
+  
+  .lable-size {
+    font-size: 14px;
+    color: white;
+    margin-left: 14px;
+    margin-top: 0px;
+    /* Space between label and input */
+  }
+  
+  .checkBoxSize{
+    font-size: 12px;
+    margin-left:13px; 
+    color: white;
+  }
+  
+  input {
+    height: 40px;
+    /* Fix input field height */
+    padding: 10px;
+    /* Padding inside the input */
+  }
+  
+  ion-checkbox {
+    margin-top: 10px;
+    /* Space for checkbox */
+  }
+  
+  @media (max-width: 768px) {
+  
+    /* Apply these styles on smaller screens (mobile) */
+    .form-container {
+      padding: 10px;
+    }
+  
+    .form-container ion-button {
+      width: 100%;
+      /* Make button full-width on small screens */
+      margin-top: 15px;
+    }
+  }
+  .divSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto
+  }
+  
+  .divpadding{
+    padding: 10px;
+  }
+  
+  .birdIcon{
+    height: 125px;
+    width: 125px;
+  }

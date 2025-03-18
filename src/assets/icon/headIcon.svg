@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="125" viewBox="0 0 125 125">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.661" x2="-0.017" y2="0.686" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00508e"/>
+      <stop offset="1" stop-color="#00b9ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_34" data-name="Group 34" transform="translate(-123 -75)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="54.5" cy="54.5" r="54.5" transform="translate(131 83)" fill="#fff"/>
+    <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M33.5,37.688A18.844,18.844,0,1,0,14.656,18.844,18.849,18.849,0,0,0,33.5,37.688Zm16.75,4.188H43.04a22.779,22.779,0,0,1-19.079,0H16.75A16.749,16.749,0,0,0,0,58.625v2.094A6.283,6.283,0,0,0,6.281,67H60.719A6.283,6.283,0,0,0,67,60.719V58.625A16.749,16.749,0,0,0,50.25,41.875Z" transform="translate(152 104)" fill="url(#linear-gradient)"/>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(123 75)" fill="none" stroke="#fff" stroke-width="3" opacity="0.3">
+      <circle cx="62.5" cy="62.5" r="62.5" stroke="none"/>
+      <circle cx="62.5" cy="62.5" r="61" fill="none"/>
+    </g>
+  </g>
+</svg>

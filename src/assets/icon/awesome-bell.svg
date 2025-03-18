@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.852" height="31.188" viewBox="0 0 27.852 31.188">
+  <defs>
+    <filter id="Icon_awesome-bell" x="0" y="0" width="27.852" height="31.188" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="1.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.75" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Icon_awesome-bell-2" x="0" y="0" width="27.852" height="31.188" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.5" dy="1.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.75" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-bell)">
+      <path id="Icon_awesome-bell-3" data-name="Icon awesome-bell" d="M11.676,26.688a3.335,3.335,0,0,0,3.334-3.336H8.342A3.335,3.335,0,0,0,11.676,26.688Zm11.227-7.8c-1.007-1.082-2.891-2.71-2.891-8.042a8.231,8.231,0,0,0-6.669-8.088V1.668a1.667,1.667,0,1,0-3.334,0V2.754A8.231,8.231,0,0,0,3.34,10.842c0,5.332-1.884,6.96-2.891,8.042A1.629,1.629,0,0,0,0,20.016a1.67,1.67,0,0,0,1.673,1.668H21.679a1.669,1.669,0,0,0,1.673-1.668,1.628,1.628,0,0,0-.449-1.132Z" transform="translate(0.75 0.75)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-bell-2)">
+      <path id="Icon_awesome-bell-4" data-name="Icon awesome-bell" d="M11.676,26.688a3.335,3.335,0,0,0,3.334-3.336H8.342A3.335,3.335,0,0,0,11.676,26.688Zm11.227-7.8c-1.007-1.082-2.891-2.71-2.891-8.042a8.231,8.231,0,0,0-6.669-8.088V1.668a1.667,1.667,0,1,0-3.334,0V2.754A8.231,8.231,0,0,0,3.34,10.842c0,5.332-1.884,6.96-2.891,8.042A1.629,1.629,0,0,0,0,20.016a1.67,1.67,0,0,0,1.673,1.668H21.679a1.669,1.669,0,0,0,1.673-1.668,1.628,1.628,0,0,0-.449-1.132Z" transform="translate(0.75 0.75)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

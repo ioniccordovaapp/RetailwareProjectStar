@@ -1,0 +1,10 @@
+{
+  "name": "RetailwareCordovaProject",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {
+      "enabled": false
+    }
+  },
+  "type": "angular"
+}

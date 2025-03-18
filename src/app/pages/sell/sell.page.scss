@@ -1,0 +1,49 @@
+/* Table Styling */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  // margin-top: 20px;
+}
+
+/* Sticky Table Header */
+.transaction-table thead th {
+  color: white;
+  position: sticky;
+  top: 0;
+  background: var(--first-innerdiv-bg);
+  z-index: 1; /* Ensure header stays on top */
+  font-weight: bold;
+}
+
+/* Table Header Styling */
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Scrollable Table Container */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  max-height: 100%; /* Set a height for the scrollable area */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 600px) {
+  .transaction-table {
+    font-size: 14px;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 8px;
+  }
+}

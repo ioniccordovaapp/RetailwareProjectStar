@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bluetooth Printer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Select a Printer</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Select Printer</ion-label>
+        <ion-select [(ngModel)]="selectedPrinter" placeholder="Choose a Printer">
+          <ion-select-option *ngFor="let printer of printers" [value]="printer">
+            {{ printer }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="full" (click)="listPrinters()" color="secondary">
+        List Printers
+      </ion-button>
+
+      <ion-button expand="full" (click)="connectPrinter()" color="primary" [disabled]="!selectedPrinter">
+        Connect
+      </ion-button>
+
+      <ion-button expand="full" (click)="printTest()" color="success" [disabled]="!selectedPrinter">
+        Print Test
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

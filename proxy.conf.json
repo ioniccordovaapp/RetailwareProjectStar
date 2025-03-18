@@ -1,0 +1,18 @@
+{
+    "/api": {
+      "target": "https://af04-117-223-153-182.ngrok-free.app",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    },
+    "/auth": {
+      "target": "https://myretailware.azurewebsites.net",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/auth": ""
+      }
+    }
+  }

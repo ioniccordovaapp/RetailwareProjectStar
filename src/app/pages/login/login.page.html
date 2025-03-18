@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true" class="">
+  <!-- <app-login-page></app-login-page> -->
+  <div style="width: 100%; height: 100%;">
+    <div style="width:100% ; height: 530px;" class="form-container content-bg">
+      <div style="display: grid; grid-template-columns: 1fr auto; margin-bottom: 15px; padding:5px;">
+
+        <div style="display: flex; align-items: center;">
+          <img class="belIcon" src="/assets/icon/Icon-settings.svg" alt="Logo" />
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: flex-end;">
+          <img class="belIcon" src="/assets/icon/awesome-bell.svg" alt="Logo" />
+        </div>
+      </div>
+
+      <form class="divpadding">
+        <div class="divSize">
+          <span>
+            <img class="birdIcon" src="/assets/icon/headIcon.svg" alt="Logo" />
+          </span>
+        </div>
+
+        <ion-label class="lable-size">User Name</ion-label>
+        <ion-item class="rounded-input-item">
+          <ion-input [(ngModel)]="username" name="username" required label-placement="floating" placeholder="Enter text"
+            type="text"></ion-input>
+        </ion-item>
+        <ion-label class="lable-size">Password</ion-label>
+        <ion-item class="rounded-input-item" style="margin-bottom: 0px;">
+          <ion-input name="password" [(ngModel)]="password" required type="password" label-placement="floating"
+            placeholder="Enter text"></ion-input>
+        </ion-item>
+
+        <div class="checkBoxSize">
+          <ion-checkbox style="margin: 0px;" name="rememberMe" labelPlacement="end" [(ngModel)]="rememberMe">Remember Me</ion-checkbox>
+        </div>
+
+        <div style=" display: flex; justify-content: center; padding-bottom: 50px;">
+          <ion-button style="--border-radius: 10px; width: 150px; height: 40px; --background: linear-gradient(#3A6073, #16222A);" 
+           type="submit" (click)="loginValidateUser()"
+            [disabled]="">
+            Login
+          </ion-button>
+        </div>
+      </form>
+    </div>
+    <div class="divSize">
+      <!-- <span> -->
+      <img src="assets/icon/Snapshot_12.png" alt="Logo" class="personLogo" />
+      <!-- </span> -->   
+    </div>
+    <div style="text-align: center;"><span>
+        <p style="margin: 5px; font-size: 14px;">- Powered By -</p>
+      </span></div>
+    <div class="divSize">
+      <span>
+        <img src="assets/icon/RetailwareLogo.svg" alt="Logo" class="retailwareLogo" />
+      </span>
+    </div>
+    <div>
+      <span class="versionText">
+        <p>Version:2.0</p>
+      </span>
+    </div>
+  </div>
+</ion-content>
