@@ -151,8 +151,6 @@ export class FccPage implements OnInit {
     }
   }
 
-
-
   onBlur(event: FocusEvent) {
     console.log('Input field focused:', (event.target as HTMLInputElement).id);
     let query = `exec Proc_ValidateProductAndBatchNo '${this.scannedData}',1`
