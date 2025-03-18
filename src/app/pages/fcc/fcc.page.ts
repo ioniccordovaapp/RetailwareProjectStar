@@ -234,7 +234,7 @@ export class FccPage implements OnInit {
 
 
 
-  // printer Functionality
+  // printer Functionality test
   displayPrinter() {
     this.printer = !this.printer;
 
